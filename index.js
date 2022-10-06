@@ -21,7 +21,7 @@ function validate(){
         document.getElementById('uname').innerHTML="";
     }
 
-    if(email==null || eamil==""){
+    if(email==null || email==""){
         document.getElementById('emailid').innerHTML="Please enter your email";
         return false;
     }
