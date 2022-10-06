@@ -45,6 +45,47 @@ function validate(){
         document.getElementById('contactno').innerHTML="";
     }
 
+    if((name.length<=2) || (name.length>=30)){
+        document.getElementById('fname').innerHTML="Please enter your proper name";
+        return false;
+    }
+    else{
+        document.getElementById('fname').innerHTML="";
+    }
 
+    if((password.length<=3) || (password.length>=10)){
+        document.getElementById('pass').innerHTML="Please enter valid password";
+        return false;
+    }
+    else{
+        document.getElementById('pass').innerHTML="";
+    }
+
+    if(number.length!=10){
+        document.getElementById('contactno').innerHTML="Please enter 10 digits";
+        return false;
+    }
+    else{
+        document.getElementById('contactno').innerHTML="";
+    }
     
+    if(email.indexOf('@') <=0 ){
+        document.getElementById('emailid').innerHTML="Please enter your proper email";
+        return false;
+    }
+    else{
+        document.getElementById('emailid').innerHTML="";
+    }
+
+    if((email.charAt(email.length-4)!=".") && (email.charAt(email.length-3)!=".")){
+        document.getElementById('emailid').innerHTML="Please enter your email";
+        return false;
+    }
+    
+    else{
+        document.getElementById('emailid').innerHTML="";
+    }
+
+return true;
+
 }
