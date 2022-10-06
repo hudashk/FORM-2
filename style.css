@@ -1,0 +1,19 @@
+h2{
+    text-align: center;
+}
+form{
+    background-color:antiquewhite;
+    margin: 0px 330px 0px 330px;
+    padding: 50px;
+}
+.term{
+    color:maroon;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.unit{
+    padding: 0px 330px 0px 0px;
+}
+body{
+    background-color:palevioletred;
+}
